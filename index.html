@@ -5,9 +5,182 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<style>
+    * {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    margin: 1rem;
+}
+header h1 {
+    color: #b0b;
+    font-size: 4rem;
+    text-shadow: 1px 1px 1px #000;
+}
+header h2 {
+    font-size: 1rem;
+}
+/* End of Header */
+/* Navbar */
+
+nav ul {
+    display: flex;
+    text-align: center;
+    background-image: linear-gradient(45deg,#80c, #b0f);
+    font-size: 1.5rem;
+    list-style: none;
+    justify-content: center;
+}
+nav ul li {
+    display: inline;
+    padding: 1rem 0;
+    margin: 0 2rem;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li:hover {
+    background-color: #b0f;
+    transition-property: background-color;
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+/* End of Navbar */
+/* Section1 */
+
+#section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    width: 100%;
+    --image: url(/Pictures/bakcground.jpg);
+            background: linear-gradient(rgb(0 0 0 / 60%)0 0 ),
+            var(--image)
+            no-repeat center/cover;
+}
+#section1 h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+/* End of Section1 */
+/* Section2 */
+#section2 {
+    height: 8rem;
+    padding: 1rem;
+    text-align: center;
+}
+#section2 div, ul {
+    padding:  0.5rem;
+}
+#section2 ul li {
+    font-size: 2rem;
+    margin: 0 0.5rem;
+}
+#section2 ul li .fa-facebook {color: #00c;}
+#section2 ul li .fa-twitter {color: #0bc;}
+#section2 ul li .fa-instagram-square {color: #c08;}
+#section2 ul li .fa-youtube {color: #c00;}
+#section2 ul li .fa-linkedin {color: #38c;}
+
+#section2 ul li .fa-facebook:hover {filter:contrast(2);}
+#section2 ul li .fa-twitter:hover {filter:contrast(2);}
+#section2 ul li .fa-instagram-square:hover {filter:contrast(2);}
+#section2 ul li .fa-youtube:hover {filter:contrast(2);}
+#section2 ul li .fa-linkedin:hover {filter:contrast(2);}
+
+#section2 ul {
+    list-style: none;
+}
+#section2 ul li {
+    display: inline;
+}
+/* End of Section2 */
+/* footer */
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    justify-content: center;
+}
+footer h1 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+/* End of Footer */
+
+/* Responsive */
+@media only screen and (max-width: 1400px) {
+    nav ul {
+        font-size: 1.2rem;
+    }
+    nav ul li {
+        padding: 0.5rem 0;
+        margin: 0 1rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    nav ul {
+        font-size: 1rem;
+    }
+    nav ul li {
+        padding: 0.5rem 0;
+        margin: 0 1rem;
+    }
+    #section1 h1 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    nav ul {
+        font-size: 0.8rem;
+    }
+    nav ul li {
+        padding: 0.2rem 0;
+        margin: 0 0.5rem;
+    }
+}
+@media only screen and (max-width: 620px) {
+    nav ul {
+        font-size: 0.65rem;
+    }
+    nav ul li {
+        padding: 0.1rem 0;
+        margin: 0 0.25rem;
+    }
+    
+    #section1 h1 {
+        font-size: 1.5rem;
+    }
+    #section2 h1 {
+        font-size: 1.2rem;
+        padding: 0.2rem;
+    }
+    #section2 div, ul {
+        padding:  0.2rem;
+    }
+    #section2 ul li {
+        font-size: 1.5rem;
+        margin: 0 0.25rem;
+    }
+}
+</style>
 <body>
     <!-- Header -->
     <header>
